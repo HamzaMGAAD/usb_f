@@ -60,12 +60,6 @@ public class FlutterUsbWritePlugin implements FlutterPlugin, MethodCallHandler, 
         methodChannel.setMethodCallHandler(this);
     }
 
-    // This static method is no longer needed with the new API
-    // public static void registerWith(Registrar registrar) {
-    //     final FlutterUsbWritePlugin instance = new FlutterUsbWritePlugin();
-    //     instance.onAttachedToEngine(registrar.context(), registrar.messenger());
-    // }
-
     @Override
     public void onDetachedFromEngine(@NonNull FlutterPluginBinding binding) {
         applicationContext = null;
